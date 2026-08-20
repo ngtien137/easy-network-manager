@@ -52,7 +52,7 @@
 ## 🚀 Quick Start
 
 ### Option A: Portable Standalone Executable (Recommended)
-1. Download the latest `Kayzit_NetManager_Portable.exe` from the [Releases](https://github.com/Kayzit/NetManager/releases) page.
+1. Download the latest `Kayzit_NetManager_Portable.exe` from the [Releases](https://github.com/ngtien137/easy-network-manager/releases) page.
 2. Double-click to run!
    * *No Python installation or setup required.*
    * *Automatically requests Administrator privileges when needed to manage firewall rules.*
@@ -67,8 +67,8 @@
 
 #### 1. Clone the repository
 ```bash
-git clone https://github.com/Kayzit/NetManager.git
-cd NetManager
+git clone https://github.com/ngtien137/easy-network-manager.git
+cd easy-network-manager
 ```
 
 #### 2. Install dependencies
@@ -89,7 +89,7 @@ python main.py
 The project is structured according to **Clean Architecture** and the **Model-View-Presenter (MVP)** pattern, strictly avoiding God Objects.
 
 ```
-NetworkManager/
+easy-network-manager/
 ├── controllers/          # Presenters / Business Logic Coordinators
 │   └── app_controller.py
 ├── core/                 # Core Domain Models, Interfaces & Services
@@ -137,9 +137,9 @@ The output file `Kayzit_NetManager_Portable.exe` will be generated directly in t
 
 ## 🔒 Security & Privacy Notice
 
-- **100% Transparent & Safe**: NetManager is completely open-source and uses standard Windows APIs (`psutil`, `win32gui`, `netsh`).
+- **100% Transparent & Safe**: Easy Network Manager is completely open-source and uses standard Windows APIs (`psutil`, `win32gui`, `netsh`).
 - **No Kernel Drivers**: Does not install intrusive drivers or third-party background services.
-- **Non-Destructive**: All firewall rules created by NetManager are tagged with a `NetManager_` prefix, allowing safe cleanup without affecting your existing Windows Firewall configuration.
+- **Non-Destructive**: All firewall rules created by the application are tagged with a `NetManager_` prefix, allowing safe cleanup without affecting your existing Windows Firewall configuration.
 
 ---
 
@@ -160,5 +160,5 @@ This project is open-source software licensed under the [MIT License](LICENSE).
 ---
 
 <div align="center">
-  <b>Kayzit NetManager</b> — Crafted with ❤️ by Kayzit.
+  <b>Easy Network Manager</b> — Crafted with ❤️ by Kayzit.
 </div>
