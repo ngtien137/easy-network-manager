@@ -130,7 +130,7 @@ class MainWindow(QMainWindow):
 
         tray_menu = QMenu()
         act_open = tray_menu.addAction("⚡ Open Kayzit NetManager")
-        act_open.triggered.connect(self.showNormal)
+        act_open.triggered.connect(self.restore_and_activate)
         act_unblock = tray_menu.addAction("🔓 Unblock All Applications")
         act_unblock.triggered.connect(self.unblock_all_requested.emit)
         tray_menu.addSeparator()
@@ -138,7 +138,30 @@ class MainWindow(QMainWindow):
         act_exit.triggered.connect(self._force_exit)
 
         self.tray_icon.setContextMenu(tray_menu)
+        self.tray_icon.activated.connect(self._on_tray_activated)
         self.tray_icon.show()
+
+    def _on_tray_activated(self, reason):
+        if reason in (QSystemTrayIcon.ActivationReason.Trigger, QSystemTrayIcon.ActivationReason.DoubleClick):
+            self.restore_and_activate()
+
+    def restore_and_activate(self):
+        """Restore window from tray / minimized state and bring to front."""
+        if not self.isVisible():
+            self.show()
+        if self.isMinimized():
+            self.showNormal()
+        self.raise_()
+        self.activateWindow()
+
+        # Windows Win32 API force foreground window
+        try:
+            import ctypes
+            hwnd = int(self.winId())
+            ctypes.windll.user32.ShowWindow(hwnd, 9) # SW_RESTORE
+            ctypes.windll.user32.SetForegroundWindow(hwnd)
+        except Exception:
+            pass
 
     def _on_page_navigated(self, page_id: str):
         page_map = {
