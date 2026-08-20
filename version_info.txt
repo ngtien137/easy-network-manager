@@ -20,7 +20,7 @@ VSVersionInfo(
             StringStruct('FileVersion', '1.0.1.0'),
             StringStruct('InternalName', 'KayzitNetManager'),
             StringStruct('LegalCopyright', 'Copyright (C) 2026 Kayzit. All rights reserved.'),
-            StringStruct('OriginalFilename', 'Kayzit_NetManager.exe'),
+            StringStruct('OriginalFilename', 'Kayzit_NetManager_v1.0.1.exe'),
             StringStruct('ProductName', 'Kayzit NetManager'),
             StringStruct('ProductVersion', '1.0.1.0')
           ]

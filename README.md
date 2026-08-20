@@ -51,11 +51,10 @@
 
 ## 🚀 Quick Start
 
-### Option A: Instant Portable Package (Recommended)
-1. Download `Kayzit_NetManager_v1.0.1_Portable.zip` from the [Releases](https://github.com/ngtien137/easy-network-manager/releases) page.
-2. Extract the ZIP to any folder or USB drive.
-3. Double-click `Kayzit_NetManager.exe` to run!
-   * *Opens instantly (< 0.2s) with zero runtime decompression overhead.*
+### Option A: Portable Standalone Executable (Recommended)
+1. Download `Kayzit_NetManager_v1.0.1.exe` from the [Releases](https://github.com/ngtien137/easy-network-manager/releases) page.
+2. Double-click to run!
+   * *Single portable executable, no installation or setup required.*
    * *No Python installation or external environment required.*
    * *Automatically requests Administrator privileges when needed to manage firewall rules.*
 
