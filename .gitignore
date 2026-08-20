@@ -11,6 +11,7 @@ __pycache__/
 build/
 develop-eggs/
 dist/
+dist_temp/
 downloads/
 eggs/
 .eggs/
@@ -31,9 +32,8 @@ MANIFEST
 *.spec
 *.exe
 *.zip
+Kayzit_NetManager/
 release/
-EasyNetworkManager_*/
-Kayzit_NetManager_*/
 
 # Installer logs
 pip-log.txt
