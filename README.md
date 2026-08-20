@@ -8,7 +8,7 @@
 [![Python](https://img.shields.io/badge/python-3.10%2B-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
 [![Framework](https://img.shields.io/badge/GUI-PyQt6-41CD52?style=flat-square&logo=qt&logoColor=white)](https://riverbankcomputing.com/software/pyqt/)
 [![Architecture](https://img.shields.io/badge/architecture-Clean%20%2F%20MVP-20B8F2?style=flat-square)](https://github.com/ngtien137/easy-network-manager)
-[![Release](https://img.shields.io/badge/release-v1.0.0-41E6A5?style=flat-square)](https://github.com/ngtien137/easy-network-manager/releases)
+[![Release](https://img.shields.io/badge/release-v1.0.1-41E6A5?style=flat-square)](https://github.com/ngtien137/easy-network-manager/releases)
 [![License: MIT](https://img.shields.io/badge/license-MIT-yellow.svg?style=flat-square)](LICENSE)
 
 *A clean, lightweight, open-source Windows task manager and network killswitch that gives you full control over which processes can access the internet.*
@@ -51,10 +51,12 @@
 
 ## 🚀 Quick Start
 
-### Option A: Portable Standalone Executable (Recommended)
-1. Download the latest `Kayzit_NetManager_Portable.exe` from the [Releases](https://github.com/ngtien137/easy-network-manager/releases) page.
-2. Double-click to run!
-   * *No Python installation or setup required.*
+### Option A: Instant Portable Package (Recommended)
+1. Download `EasyNetworkManager_v1.0.1_Portable.zip` from the [Releases](https://github.com/ngtien137/easy-network-manager/releases) page.
+2. Extract the ZIP to any folder or USB drive.
+3. Double-click `EasyNetworkManager.exe` to run!
+   * *Opens instantly (< 0.2s) with zero runtime decompression overhead.*
+   * *No Python installation or external environment required.*
    * *Automatically requests Administrator privileges when needed to manage firewall rules.*
 
 ---

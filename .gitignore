@@ -30,6 +30,9 @@ MANIFEST
 *.manifest
 *.spec
 *.exe
+*.zip
+release/
+EasyNetworkManager_*/
 
 # Installer logs
 pip-log.txt
