@@ -16,12 +16,12 @@ VSVersionInfo(
           '040904B0',
           [
             StringStruct('CompanyName', 'Kayzit'),
-            StringStruct('FileDescription', 'Easy Network Manager — Windows Process & Network Firewall'),
+            StringStruct('FileDescription', 'Kayzit NetManager — Windows Process & Network Firewall'),
             StringStruct('FileVersion', '1.0.1.0'),
-            StringStruct('InternalName', 'EasyNetworkManager'),
+            StringStruct('InternalName', 'KayzitNetManager'),
             StringStruct('LegalCopyright', 'Copyright (C) 2026 Kayzit. All rights reserved.'),
-            StringStruct('OriginalFilename', 'EasyNetworkManager.exe'),
-            StringStruct('ProductName', 'Easy Network Manager'),
+            StringStruct('OriginalFilename', 'Kayzit_NetManager.exe'),
+            StringStruct('ProductName', 'Kayzit NetManager'),
             StringStruct('ProductVersion', '1.0.1.0')
           ]
         )

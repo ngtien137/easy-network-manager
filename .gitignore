@@ -33,6 +33,7 @@ MANIFEST
 *.zip
 release/
 EasyNetworkManager_*/
+Kayzit_NetManager_*/
 
 # Installer logs
 pip-log.txt
